@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <link href="{{url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css"/>
+  </head>
+  <body class="body">
+    <form class="container">
+        <button class = "button" type="submit" formaction="{{url_for('game_vs_pc')}}">One player</button>
+        <button class = "button" type="submit" formaction="{{url_for('game_vs_player')}}">Two players</button>
+        <button class = "button" type="submit" formaction="{{url_for('history')}}">History</button>
+        <button class = "button" type="submit" formaction="{{url_for('settings')}}">Settings</button>
+    </form>
+  </body>
+</html>
